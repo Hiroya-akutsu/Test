@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+/* 共通設定 */
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  vertical-align: bottom;
+  font-family: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+  font-weight: normal;
+}
+
+/* ヘッダー */
+
+header {
+  background-image: url(/img/chef.webp);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  .global-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    color: #fff;
+    line-height: 65px;
+    font-size: 20px
+  }
+
+  .global-nav li a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .global-nav li .btn {
+    display: block;
+    font-size: 20px;
+    width: 200px;
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+    text-decoration: none;
+    color: #fff;
+    background: #487C2F;
+    border-radius: 50px;
+  }
+  .search {
+    h2 {
+      text-align: center;
+      color: #fff;
+      font-size: 60px;
+      margin-top: 100px;
+    }
+  
+    input {
+      display: block;
+      margin: 20px auto 200px;
+      padding: 20px 60px;
+      border-style: none;
+      border-radius: 10px;
+      
+    }
+  }
+}
+
+
+/* メインコンテンツ */
+
+main {
+  .inner {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 0;
+    
+      h2 {
+        font-size: 60px;
+        text-align: center;
+        margin: 100px 0;
+      }
+    
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 0;
+      text-align: center;
+      
+      h3 {
+        text-align: center;
+        font-weight: bold;
+      }
+
+      /* 1store */
+
+      .store-items {
+      list-style: none;
+
+      a {
+          display: block;
+          font-size: 20px;
+          width: 200px;
+          height: 65px;
+          text-align: center;
+          line-height: 65px;
+          text-decoration: none;
+          color: #fff;
+          background: #487C2F;
+          border-radius: 50px;
+          margin: 10px auto 0;
+        }
+
+        img {
+          margin-top: 50px;
+        }
+      }
+  }
+
+  }
+}
+
+/* About */
+section {
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  span {
+    font-weight: bold;
+  }
+  
+  h2 {
+    text-align: center;
+  }
+
+  .about-desc {
+    h3 {
+      margin: 0;
+      vertical-align: top;
+      font-size: 48px;
+
+      &::before {
+        content: "CEO ";
+      }
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  img {
+    margin-right: 60px;
+  }
+}
+
+/* company */
+.company-container {
+  display: flex;
+}
+
+/* footer */
+footer {
+  margin-top: 100px;
+  background: #487C2F;
+  color: #fff;
+
+  .footer-container {
+    padding: 50px;
+  }
+
+  small {
+    display: block;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .sns-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .sns-logo .twitter {
+    margin-right: 10px;
+  }
+}
